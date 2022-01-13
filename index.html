@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8a6ab4;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(238, 193, 157, 0.795);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>TALITHA</h1><h2>ULIMAZZAHRA SOLIHUN</h2>
+
+<p>A student who has some interests in programming.</p>
+<hr>
+
+<h2>PORTFOLIO</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="assets/jline.jpeg" alt="jline" style="width:100%">
+      <h3>Front End Programmer</h3>
+      <p>Static website using HTML and CSS as a JLINE project collaboration between PT. PIN Indonesia and IPB Vocational School in 2020</p>
+      <a href="https://github.com/talithaus/035">Code</a>
+      <br>
+      <a href="http://j3d118067.lovestoblog.com/">Site</a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="assets/cpu.jpeg" alt="cpu" style="width:100%">
+      <h3>3D Modeller and App Developer</h3>
+      <p>Making an application based on Augmented Reality that provides some parts of CPU 3D objects with their function</p>
+      <a href="https://drive.google.com/drive/folders/1V1YJ2f3jJkaEarCfGX6lkGwIaqD3f6qg?usp=sharing">APK and Marker</a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="assets/sikimdas.jpeg" alt="sikimdas" style="width:100%">
+      <h3>Being a Part of Back End Programmer and Database Making </h3>
+      <p>This is a chemistry learning website named Si Kimdas that contains materials, exercise, and quiz as learning evaluation</p>
+      <a href="https://github.com/talithaus/sikimdas">Code</a>
+      <br>
+      <a href="http://sikimdas.lovestoblog.com/">Site</a>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<h2>CERTIFICATES</h2>
+
+<div class="content">
+  <h3>Python for Data Professional Beginner - Part 1</h3>
+  <p>DQLAB</p>
+  <img src="assets/0003.jpg" alt="dqlab" style="width:100%">
+</div>
+
+<div class="content">
+  <h3>Introduction to Cybersecurity</h3>
+  <p>Cisco Networking Academy</p>
+  <img src="assets/0002.jpg" alt="dqlab" style="width:100%">
+</div>
+
+<div class="content">
+  <h3>Switching, Routing, and Wireless Essentials</h3>
+  <p>Cisco Networking Academy</p>
+  <img src="assets/0001.jpg" alt="dqlab" style="width:100%">
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
